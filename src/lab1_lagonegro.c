@@ -53,6 +53,7 @@ int main() {
 
 		if (command == NULL && name == NULL)
 		{
+
 			printf("\nWrong Amount of arguments\n");
 			continue;
 		}
@@ -149,7 +150,7 @@ int main() {
 			case 4: //cd allows you to enter into next directory
 
 
-
+				
 
 				check = check_dir(current_tree_node, name);
 
@@ -212,7 +213,7 @@ int main() {
 
 
 
-				if (current_tree_node->type == 'F')
+				if (current_tree_node->type != 'F')
 				{
 					printf("You are curently in a File!!!\n");
 					break;
